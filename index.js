@@ -15,19 +15,19 @@ convertBtn.addEventListener("click", function() {
     const inputValue = inputEl.value
     const metre = inputValue   
     const feet = metre * 3.281
-    lengthOutput.textContent = `${Number(metre).toFixed(3)} metres = ${feet.toFixed(3)} feet / ${feet.toFixed(3) } feet = ${Number(metre).toFixed(3)} metres`   
+    lengthOutput.textContent = `${Number(metre).toFixed(2)} metres = ${feet.toFixed(2)} feet / ${feet.toFixed(2) } feet = ${Number(metre).toFixed(2)} metres`   
 })
 
 convertBtn.addEventListener("click", function() {
     const inputValue = inputEl.value
     const litre = inputValue   
     const gallon = litre * 0.264
-    volumeOutput.textContent = `${Number(litre).toFixed(3)} litres = ${gallon.toFixed(3)} gallons / ${gallon.toFixed(3) } gallons = ${Number(litre).toFixed(3)} litres`   
+    volumeOutput.textContent = `${Number(litre).toFixed(2)} litres = ${gallon.toFixed(2)} gallons / ${gallon.toFixed(2) } gallons = ${Number(litre).toFixed(2)} litres`   
 })
 
 convertBtn.addEventListener("click", function() {
     const inputValue = inputEl.value
     const kilogram = inputValue   
     const pound = kilogram * 2.204
-    massOutput.textContent = `${Number(kilogram).toFixed(3)} kilograms = ${pound.toFixed(3)} pounds / ${pound.toFixed(3) } pounds = ${Number(kilogram).toFixed(3)} kilograms`   
+    massOutput.textContent = `${Number(kilogram).toFixed(2)} kilograms = ${pound.toFixed(2)} pounds / ${pound.toFixed(2) } pounds = ${Number(kilogram).toFixed(2)} kilograms`   
 })

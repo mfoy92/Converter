@@ -11,6 +11,9 @@ const lengthOutput = document.getElementById("length-output")
 const volumeOutput = document.getElementById("volume-output")
 const massOutput = document.getElementById("mass-output")
 
+
+
+
 convertBtn.addEventListener("click", function() {
     const inputValue = inputEl.value
     const metre = inputValue   
@@ -31,3 +34,10 @@ convertBtn.addEventListener("click", function() {
     const pound = kilogram * 2.204
     massOutput.textContent = `${Number(kilogram).toFixed(2)} kilograms = ${pound.toFixed(2)} pounds / ${pound.toFixed(2) } pounds = ${Number(kilogram).toFixed(2)} kilograms`   
 })
+
+inputEl.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      document.getElementById("convert-btn").click();
+    }
+  });

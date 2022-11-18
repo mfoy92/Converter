@@ -5,9 +5,10 @@ const lengthOutput = document.getElementById("length-output")
 const volumeOutput = document.getElementById("volume-output")
 const massOutput = document.getElementById("mass-output")
 
-const inputValue = inputEl.value
+
 
 function convert() {
+    const inputValue = inputEl.value
     const metre = inputValue   
     const feet = metre * 3.281
     lengthOutput.textContent = `${Number(metre).toFixed(2)}
